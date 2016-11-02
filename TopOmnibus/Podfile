@@ -1,0 +1,15 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+use_frameworks!
+
+target 'TopOmnibus' do
+
+pod 'SnapKit' , '~> 3.0.2'
+pod 'AFNetworking'
+pod 'SDWebImage'
+pod 'MJRefresh'
+pod 'YYModel'
+
+end
+
