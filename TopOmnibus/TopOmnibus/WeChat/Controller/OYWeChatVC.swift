@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OYWeChatVC: UIViewController, UITableViewDelegate {
+class OYWeChatVC: UIViewController {
     
     var tableView: UITableView!
     var dataSource: [OYWeChatModel] = [OYWeChatModel]()
@@ -45,7 +45,7 @@ class OYWeChatVC: UIViewController, UITableViewDelegate {
 }
 
 
-extension OYWeChatVC: UITableViewDataSource {
+extension OYWeChatVC: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.dataSource.count
     }
@@ -56,5 +56,9 @@ extension OYWeChatVC: UITableViewDataSource {
     }
     @objc(tableView:heightForRowAtIndexPath:) func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
     }
 }

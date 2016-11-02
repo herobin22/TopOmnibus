@@ -23,15 +23,17 @@ class OYWeChatCell: UITableViewCell {
             iconView.sd_setImage(with: URL(string: (model?.firstImg)!), placeholderImage: UIImage(named: "colorBg"))
             titleLabel.text = model?.title
             sourceLabel.text = model?.source
+            
             titleLabel.sizeToFit()
             sourceLabel.sizeToFit()
-            self.layoutIfNeeded()
+            layoutIfNeeded()
         }
     }
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.separatorInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+        self.selectionStyle = .none
         setupUI()
     }
     required init?(coder aDecoder: NSCoder) {
@@ -53,7 +55,8 @@ class OYWeChatCell: UITableViewCell {
             make.top.equalTo(contentView).offset(topBottomMargin)
             make.right.equalTo(contentView).offset(-leftRightMargin)
             make.width.equalTo(mainWidth/4.0)
-            make.height.equalTo(iconView.snp.width)
+//            make.height.equalTo(iconView.snp.width)
+            make.bottom.equalTo(self).offset(-topBottomMargin)
         }
         titleLabel.snp.makeConstraints { (make) in
             make.top.equalTo(contentView).offset(topBottomMargin)
@@ -67,7 +70,6 @@ class OYWeChatCell: UITableViewCell {
         }
         contentView.snp.makeConstraints { (make) in
             make.top.left.right.equalTo(self)
-//            make.bottom.equalTo(sourceLabel).offset(topBottomMargin)
             make.bottom.equalTo(self)
         }
     }
