@@ -15,3 +15,4 @@ let mainHeight = mainSize.height
 let topBottomMargin: CGFloat = 12
 let leftRightMargin: CGFloat = 16
 let interMargin: CGFloat = 8
+let pictureInterMargin: CGFloat = 4

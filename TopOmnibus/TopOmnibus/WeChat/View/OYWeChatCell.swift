@@ -22,7 +22,7 @@ class OYWeChatCell: UITableViewCell {
         didSet {
             iconView.sd_setImage(with: URL(string: (model?.firstImg)!), placeholderImage: UIImage(named: "colorBg"))
             titleLabel.text = model?.title
-            sourceLabel.text = model?.source
+            sourceLabel.text = "微信公众号: \((model?.source)!)"
             
             titleLabel.sizeToFit()
             sourceLabel.sizeToFit()
@@ -32,7 +32,7 @@ class OYWeChatCell: UITableViewCell {
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        self.separatorInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+        self.separatorInset = UIEdgeInsets(top: 0, left: leftRightMargin, bottom: 0, right: leftRightMargin)
         self.selectionStyle = .none
         setupUI()
     }
