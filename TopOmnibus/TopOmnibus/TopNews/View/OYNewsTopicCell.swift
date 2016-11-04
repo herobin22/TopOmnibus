@@ -16,12 +16,18 @@ class OYNewsTopicCell: UICollectionViewCell {
             label.text = topic!
         }
     }
-    var label: UILabel = UILabel()
+    var process: CGFloat = 0 {
+        didSet {
+            label.textColor = UIColor(red: process, green: 0, blue: 0, alpha: 1)
+        }
+    }
+    private var label: UILabel = UILabel()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         contentView.addSubview(label)
+        label.font = UIFont.systemFont(ofSize: 15)
         label.snp.makeConstraints { (make) in
             make.centerX.centerY.equalTo(contentView)
         }

@@ -45,7 +45,23 @@ class OYAPIManager: NSObject {
             }, failure: failure)
     }
     
-    func loadNewsData(parameters:Any? ,success:(([OYNewsModel]) ->Void)? , failure:((URLSessionDataTask?, Error) ->Void)?) -> Void {
-        
+    func loadNewsData(type:String? ,success:(([OYNewsModel]) ->Void)? , failure:((URLSessionDataTask?, Error) ->Void)?) -> Void {
+        var params = [String : Any]()
+        if type != nil {
+            params["type"] = type!
+        }
+        params["key"] = NewsKey
+        params["pno"] = 2
+        OYHTTPSessionManager.sharedManager.request(type: .GET, URLString: NewsAPI, parameters: params, success: { (_, object) in
+            let resultObject = object as! [String : Any]
+            let result = (resultObject["result"] as! [String : AnyObject])
+            let list = result["data"] as! [AnyObject]
+            var models: [OYNewsModel] = [OYNewsModel]()
+            for i in 0..<list.count {
+                let model = OYNewsModel(dict: list[i] as! [String : AnyObject])
+                models.append(model)
+            }
+            success?(models)
+            }, failure: failure)
     }
 }
