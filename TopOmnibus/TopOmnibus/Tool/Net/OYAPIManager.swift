@@ -15,8 +15,8 @@ let WeChatKey: String = "1d3df1efbd6fccc5d2a1a9338d36ccdf"
 
 let NewsAPI: String = "http://v.juhe.cn/toutiao/index"
 let NewsKey: String = "857b3edf87eb698c078c297eb04b6cfa"
-let NewsTopicKeys: [String] = ["top", "shehui", "guonei", "guoji", "yule", "tiyu", "junshi", "keji", "caijing", "shishang"]
-let NewsTopics: [String] = ["头条", "社会", "国内", "国际", "娱乐", "体育", "军事", "科技", "财经", "时尚"]
+let NewsTopicKeys: [String] = ["top", "yule", "shehui", "keji", "shishang", "tiyu",  "guonei", "guoji", "junshi", "caijing"]
+let NewsTopics: [String] = ["头条", "娱乐", "社会", "科技", "时尚", "体育", "国内", "国际", "军事", "财经"]
 
 class OYAPIManager: NSObject {
     static let sharedManager: OYAPIManager = {

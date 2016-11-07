@@ -23,12 +23,14 @@ class OYNewsChannelVC: UIViewController {
     }
     
     private func setupUI() {
+        view.backgroundColor = UIColor.white
         tableView.frame = view.bounds
         view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.tableFooterView = UIView()
         tableView.register(OYNewsListCell.self, forCellReuseIdentifier: OYNewsListCellID)
     }
     
@@ -42,6 +44,11 @@ class OYNewsChannelVC: UIViewController {
         }) { (_, error) in
             print(error)
         }
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        tableView.frame = view.bounds
     }
 }
 

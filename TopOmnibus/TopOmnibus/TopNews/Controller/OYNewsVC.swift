@@ -32,16 +32,17 @@ class OYNewsVC: UIViewController {
     func setupUI() -> Void {
         automaticallyAdjustsScrollViewInsets = false
         view.backgroundColor = UIColor.white
-        topicView.frame = CGRect(x: 0, y: 64, width: mainWidth, height: 32)
+        topicView.frame = CGRect(x: 0, y: 64, width: mainWidth, height: 36)
         weak var weakSelf = self
         topicView.didSelectTopic = {
             (num) in
             let indexPath = IndexPath(item: num, section: 0)
-            weakSelf!.collectionView .selectItem(at: indexPath, animated: false, scrollPosition: .left)
+            weakSelf!.collectionView.selectItem(at: indexPath, animated: false, scrollPosition: .left)
         }
+        topicView.process = 0
         view.addSubview(topicView)
         
-        collectionView.frame = CGRect(x: 0, y: 96, width: mainWidth, height: view.bounds.size.height-96)
+        collectionView.frame = CGRect(x: 0, y: 100, width: mainWidth, height: view.bounds.size.height-100-49)
         collectionView.backgroundColor = UIColor.white
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -72,12 +73,20 @@ extension OYNewsVC: UICollectionViewDataSource, UICollectionViewDelegate {
         let vc = channelVc(withTopic: topicArr[indexPath.item])
         cell.contentView.addSubview(vc.view)
         vc.view.frame = cell.bounds
-        
+
         return cell
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let process = scrollView.contentOffset.x / mainWidth
+        let offsetX = scrollView.contentOffset.x
+        guard offsetX >= 0 && offsetX <= scrollView.contentSize.width-mainWidth else {
+            return
+        }
+        let process = offsetX / mainWidth
         topicView.process = process
+    }
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let processInt = Int(scrollView.contentOffset.x / mainWidth)
+        topicView.processInt = processInt
     }
     
     private func channelVc(withTopic topic: String) -> OYNewsChannelVC {

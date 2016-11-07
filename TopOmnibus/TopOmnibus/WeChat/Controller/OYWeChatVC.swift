@@ -33,6 +33,7 @@ class OYWeChatVC: UIViewController {
         tableView?.delegate = self
         tableView.estimatedRowHeight = 50
         tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.tableFooterView = UIView()
         tableView.register(OYWeChatCell.self, forCellReuseIdentifier: OYWeChatCellID)
     }
     

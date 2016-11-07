@@ -11,14 +11,20 @@ import UIKit
 let OYNewsTopicCellID = NSStringFromClass(OYNewsTopicCell.self)
 
 class OYNewsTopicCell: UICollectionViewCell {
-    var topic: String? {
+//    var topic: String? {
+//        didSet {
+//            label.text = topic!
+//        }
+//    }
+//    var process: CGFloat = 0 {
+//        didSet {
+//            label.textColor = UIColor(red: process, green: 0, blue: 0, alpha: 1)
+//        }
+//    }
+    var model: OYNewsTopicModel? {
         didSet {
-            label.text = topic!
-        }
-    }
-    var process: CGFloat = 0 {
-        didSet {
-            label.textColor = UIColor(red: process, green: 0, blue: 0, alpha: 1)
+            label.text = model!.topic
+            label.textColor = UIColor(red: model!.process, green: 0, blue: 0, alpha: 1)
         }
     }
     private var label: UILabel = UILabel()

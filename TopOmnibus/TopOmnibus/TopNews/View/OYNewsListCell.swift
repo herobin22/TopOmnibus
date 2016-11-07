@@ -19,6 +19,9 @@ class OYNewsListCell: UITableViewCell {
             titleLabel.text = newModel.title
             authorLabel.text = newModel.author_name
             dateLabel.text = newModel.date
+            titleLabel.sizeToFit()
+            authorLabel.sizeToFit()
+            dateLabel.sizeToFit()
             let width = (mainWidth-CGFloat(newModel.picArr.count-1)*pictureInterMargin-2*leftRightMargin)/CGFloat(newModel.picArr.count)
             // 更新约束
             picView1.snp.updateConstraints { (make) in
@@ -47,6 +50,7 @@ class OYNewsListCell: UITableViewCell {
             default:
                 break
             }
+            layoutIfNeeded()
         }
     }
     let titleLabel: UILabel = UILabel()
@@ -59,6 +63,7 @@ class OYNewsListCell: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         selectionStyle = .none
+        separatorInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
         setupUI()
     }
     required init?(coder aDecoder: NSCoder) {
@@ -95,7 +100,7 @@ class OYNewsListCell: UITableViewCell {
             make.left.equalTo(picView2.snp.right).offset(pictureInterMargin)
             make.width.height.equalTo(picView2)
         }
-        authorLabel.textColor = #colorLiteral(red: 0.8644071691, green: 0.862745098, blue: 0.862745098, alpha: 1)
+        authorLabel.textColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         authorLabel.font = UIFont.systemFont(ofSize: 13)
         authorLabel.snp.makeConstraints { (make) in
             make.left.equalTo(contentView).offset(leftRightMargin)
