@@ -27,8 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func setRootVC() -> Void {
         let tabBarVC = UITabBarController()
         
-        let firstNav = UINavigationController(rootViewController: OYWeChatVC())
-        let secondNav = UINavigationController(rootViewController: OYNewsVC())
+        let firstNav = OYNavigationController(rootViewController: OYWeChatVC())
+        let secondNav = OYNavigationController(rootViewController: OYNewsVC())
         
         tabBarVC.viewControllers = [firstNav, secondNav]
         

@@ -14,17 +14,8 @@ class OYCommonsWebVC: UIViewController {
     var webView: WKWebView?
     var contentURL: String?
     
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-//        setupWebView()
-    }
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        hidesBottomBarWhenPushed = true
         view.backgroundColor = UIColor.white
         setupWebView()
     }
