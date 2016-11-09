@@ -26,10 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func setRootVC() -> Void {
         let tabBarVC = UITabBarController()
-        
-        let firstNav = OYNavigationController(rootViewController: OYWeChatVC())
-        let secondNav = OYNavigationController(rootViewController: OYNewsVC())
-        
+        tabBarVC.tabBar.tintColor = mainColor
+        let firstNav = OYNavigationController(rootViewController: OYNewsVC())
+        firstNav.tabBarItem = UITabBarItem(title: "新闻", image: UIImage(named: "tabbar_icon_news_normal"), selectedImage: UIImage(named: "tabbar_icon_news_highlight"))
+        let secondNav = OYNavigationController(rootViewController: OYWeChatVC())
+        secondNav.tabBarItem = UITabBarItem(title: "精选", image: UIImage(named: "tabbar_icon_bar_normal"), selectedImage: UIImage(named: "tabbar_icon_bar_highlight"))
         tabBarVC.viewControllers = [firstNav, secondNav]
         
         window?.rootViewController = tabBarVC

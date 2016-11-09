@@ -11,7 +11,6 @@ import UIKit
 class OYNewsTopicModel: NSObject {
     var topic: String?
     var process: CGFloat = 0
-    var processInt: Int = 0
     
     init(topic: String) {
         self.topic = topic

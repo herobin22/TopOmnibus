@@ -100,13 +100,13 @@ class OYNewsListCell: UITableViewCell {
             make.left.equalTo(picView2.snp.right).offset(pictureInterMargin)
             make.width.height.equalTo(picView2)
         }
-        authorLabel.textColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        authorLabel.textColor = #colorLiteral(red: 0.7233663201, green: 0.7233663201, blue: 0.7233663201, alpha: 1)
         authorLabel.font = UIFont.systemFont(ofSize: 13)
         authorLabel.snp.makeConstraints { (make) in
             make.left.equalTo(contentView).offset(leftRightMargin)
             make.top.equalTo(picView1.snp.bottom).offset(interMargin)
         }
-        dateLabel.textColor = #colorLiteral(red: 0.8644071691, green: 0.862745098, blue: 0.862745098, alpha: 1)
+        dateLabel.textColor = #colorLiteral(red: 0.7233663201, green: 0.7233663201, blue: 0.7233663201, alpha: 1)
         dateLabel.font = UIFont.systemFont(ofSize: 13)
         dateLabel.snp.makeConstraints { (make) in
             make.left.equalTo(authorLabel.snp.right).offset(leftRightMargin)

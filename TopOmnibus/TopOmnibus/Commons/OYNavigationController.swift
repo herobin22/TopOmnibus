@@ -13,7 +13,8 @@ class OYNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        navigationBar.barTintColor = UIColor.orange
+        self.view.backgroundColor = UIColor.white
+        navigationBar.barTintColor = mainColor
     }
 
     override func didReceiveMemoryWarning() {

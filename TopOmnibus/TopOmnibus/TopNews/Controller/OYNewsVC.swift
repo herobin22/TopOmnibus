@@ -49,6 +49,7 @@ class OYNewsVC: UIViewController {
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.showsVerticalScrollIndicator = false
         collectionView.isPagingEnabled = true
+        collectionView.scrollsToTop = false
         flowLayout.minimumLineSpacing = 0
         flowLayout.minimumInteritemSpacing = 0
         flowLayout.scrollDirection = .horizontal

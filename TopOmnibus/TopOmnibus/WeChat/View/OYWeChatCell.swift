@@ -46,7 +46,7 @@ class OYWeChatCell: UITableViewCell {
         self.contentView.addSubview(titleLabel)
         self.contentView.addSubview(sourceLabel)
         
-        sourceLabel.textColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        sourceLabel.textColor = #colorLiteral(red: 0.7233663201, green: 0.7233663201, blue: 0.7233663201, alpha: 1)
         sourceLabel.font = UIFont.systemFont(ofSize: 13)
         
         titleLabel.numberOfLines = 0

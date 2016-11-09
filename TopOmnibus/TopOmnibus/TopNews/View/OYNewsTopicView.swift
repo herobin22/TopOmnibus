@@ -81,6 +81,7 @@ class OYNewsTopicView: UIView {
         collectionView.backgroundColor = #colorLiteral(red: 0.8644071691, green: 0.862745098, blue: 0.862745098, alpha: 1)
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.showsVerticalScrollIndicator = false
+        collectionView.scrollsToTop = false
         flowLayout.minimumLineSpacing = 0
         flowLayout.minimumInteritemSpacing = 0
         flowLayout.scrollDirection = .horizontal
