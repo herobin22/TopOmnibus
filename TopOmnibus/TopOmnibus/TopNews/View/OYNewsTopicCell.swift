@@ -11,16 +11,7 @@ import UIKit
 let OYNewsTopicCellID = NSStringFromClass(OYNewsTopicCell.self)
 
 class OYNewsTopicCell: UICollectionViewCell {
-//    var topic: String? {
-//        didSet {
-//            label.text = topic!
-//        }
-//    }
-//    var process: CGFloat = 0 {
-//        didSet {
-//            label.textColor = UIColor(red: process, green: 0, blue: 0, alpha: 1)
-//        }
-//    }
+    
     var model: OYNewsTopicModel? {
         didSet {
             label.text = model!.topic

@@ -10,7 +10,7 @@ pod 'AFNetworking'
 pod 'SDWebImage'
 pod 'MJRefresh'
 pod 'YYModel'
-pod 'NJKWebViewProgress'
+pod 'AXWebViewController'
 
 end
 

@@ -17,4 +17,4 @@ let leftRightMargin: CGFloat = 16
 let interMargin: CGFloat = 8
 let pictureInterMargin: CGFloat = 4
 
-let mainColor: UIColor = UIColor(red: 232.0/255.0, green: 48.0/255.0, blue: 56.0/255.0, alpha: 1)
+let mainRedColor: UIColor = UIColor(red: 232.0/255.0, green: 48.0/255.0, blue: 56.0/255.0, alpha: 1)

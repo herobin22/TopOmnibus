@@ -8,6 +8,7 @@
 
 import UIKit
 import MJRefresh
+import AXWebViewController
 
 class OYWeChatVC: UIViewController {
     
@@ -92,8 +93,9 @@ extension OYWeChatVC: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let webVc = OYCommonsWebVC()
-        webVc.contentURL = dataSource[indexPath.row].url
-        navigationController?.pushViewController(webVc, animated: true)
+        let model = dataSource[indexPath.row]
+        let webVC = AXWebViewController(address: model.url!)
+        webVC.navigationType = .barItem
+        self.navigationController?.pushViewController(webVC, animated: true)
     }
 }

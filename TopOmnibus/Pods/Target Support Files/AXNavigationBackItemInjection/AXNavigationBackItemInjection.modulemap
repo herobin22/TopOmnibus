@@ -1,0 +1,6 @@
+framework module AXNavigationBackItemInjection {
+  umbrella header "AXNavigationBackItemInjection-umbrella.h"
+
+  export *
+  module * { export * }
+}

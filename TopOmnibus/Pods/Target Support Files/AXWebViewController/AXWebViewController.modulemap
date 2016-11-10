@@ -1,0 +1,6 @@
+framework module AXWebViewController {
+  umbrella header "AXWebViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

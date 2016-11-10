@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AXWebViewController
 
 class OYNewsChannelVC: UIViewController {
 
@@ -63,8 +64,8 @@ extension OYNewsChannelVC: UITableViewDataSource, UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let model = dataSource[indexPath.row]
-        let vc = OYCommonsWebVC()
-        vc.contentURL = model.url
-        navigationController?.pushViewController(vc, animated: true)
+        let webVC = AXWebViewController(address: model.url!)
+        webVC.navigationType = .barItem
+        self.navigationController?.pushViewController(webVC, animated: true)
     }
 }
