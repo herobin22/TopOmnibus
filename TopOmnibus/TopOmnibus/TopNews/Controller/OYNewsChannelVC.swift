@@ -9,18 +9,14 @@
 import UIKit
 import AXWebViewController
 
-class OYNewsChannelVC: UIViewController {
+class OYNewsChannelVC: OYViewController {
 
     var type: String?
-    let tableView = UITableView()
     var dataSource: [OYNewsModel] = [OYNewsModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        setupUI()
-        
-        loadData()
+        tableView.register(OYNewsListCell.self, forCellReuseIdentifier: OYNewsListCellID)
     }
     
     private func setupUI() {
@@ -35,13 +31,15 @@ class OYNewsChannelVC: UIViewController {
         tableView.register(OYNewsListCell.self, forCellReuseIdentifier: OYNewsListCellID)
     }
     
-    private func loadData() {
+    override func loadData() {
         guard let param = type else {
             return
         }
         OYAPIManager.sharedManager.loadNewsData(type: param, success: { (models) in
             self.dataSource = models
             self.tableView.reloadData()
+            self.endRefresh()
+            self.tableView.mj_footer.endRefreshingWithNoMoreData()
         }) { (_, error) in
             print(error)
         }
@@ -53,18 +51,18 @@ class OYNewsChannelVC: UIViewController {
     }
 }
 
-extension OYNewsChannelVC: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension OYNewsChannelVC {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataSource.count
     }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: OYNewsListCellID) as! OYNewsListCell
         cell.model = dataSource[indexPath.row]
         return cell
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let model = dataSource[indexPath.row]
-        let webVC = AXWebViewController(address: model.url!)
+        let webVC = OYWebViewController(address: model.url!)
         webVC.navigationType = .barItem
         self.navigationController?.pushViewController(webVC, animated: true)
     }

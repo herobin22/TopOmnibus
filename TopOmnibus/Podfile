@@ -11,6 +11,7 @@ pod 'SDWebImage'
 pod 'MJRefresh'
 pod 'YYModel'
 pod 'AXWebViewController'
+pod 'Google-Mobile-Ads-SDK'
 
 end
 

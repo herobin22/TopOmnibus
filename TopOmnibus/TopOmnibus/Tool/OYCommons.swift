@@ -18,3 +18,5 @@ let interMargin: CGFloat = 8
 let pictureInterMargin: CGFloat = 4
 
 let mainRedColor: UIColor = UIColor(red: 232.0/255.0, green: 48.0/255.0, blue: 56.0/255.0, alpha: 1)
+
+let AdMobAdUnitID: String = "ca-app-pub-6689146397732769/4870932131"
