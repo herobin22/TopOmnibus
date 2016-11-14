@@ -22,8 +22,8 @@
 
 - (void)wtk_viewDidLoad
 {
-    
-    if (self.navigationController && self != self.navigationController.viewControllers.firstObject)
+    /// 因为我的控制器中有嵌套其它的控制器,所以加上self.navigationController.viewControllers.count > 1这个判断
+    if (self.navigationController && self != self.navigationController.viewControllers.firstObject && self.navigationController.viewControllers.count > 1)
     {
         UIPanGestureRecognizer *popRecognizer = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(handlePopRecognizer:)];
         [self.view addGestureRecognizer:popRecognizer];

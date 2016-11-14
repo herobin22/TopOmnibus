@@ -145,7 +145,7 @@ const static NSTimeInterval DefauleAnimationDuration = 0.6;
 
 - (void)dealloc
 {
-    NSLog(@"%@释放",[self class]);
+//    NSLog(@"%@释放",[self class]);
 }
 
 

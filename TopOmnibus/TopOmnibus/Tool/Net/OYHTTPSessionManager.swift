@@ -27,10 +27,22 @@ class OYHTTPSessionManager: AFHTTPSessionManager {
     
     /// GET/POST请求
     func request(type: RequestType, URLString: String, parameters: Any?, progress: ((Progress) -> Void)?, success: ((URLSessionDataTask, Any?) -> Void)?, failure: ((URLSessionDataTask?, Error) -> Void)?) -> Void {
+        /// 封闭联网指示器指示
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        let success1 = {
+            (task: URLSessionDataTask, result: Any?) in
+            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+            success?(task, result)
+        }
+        let failure1 = {
+            (task: URLSessionDataTask?, error: Error) in
+            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+            failure?(task, error)
+        }
         if type == .GET {
-            self.get(URLString, parameters: parameters, progress: progress, success: success, failure: failure)
+            self.get(URLString, parameters: parameters, progress: progress, success: success1, failure: failure1)
         }else if type == .POST {
-            self.post(URLString, parameters: parameters, progress: progress, success: success, failure: failure)
+            self.post(URLString, parameters: parameters, progress: progress, success: success1, failure: failure1)
         }
     }
     

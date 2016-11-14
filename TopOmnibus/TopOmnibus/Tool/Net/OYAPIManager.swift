@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import YYModel
 
 //MARK: API
 let WeChatAPI: String = String("http://v.juhe.cn/weixin/query")

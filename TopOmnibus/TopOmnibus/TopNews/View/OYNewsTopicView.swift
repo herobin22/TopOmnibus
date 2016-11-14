@@ -78,7 +78,7 @@ class OYNewsTopicView: UIView {
         collectionView.contentInset = UIEdgeInsets.zero
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.backgroundColor = #colorLiteral(red: 0.8644071691, green: 0.862745098, blue: 0.862745098, alpha: 1)
+        collectionView.backgroundColor = #colorLiteral(red: 0.9411764706, green: 0.9411764706, blue: 0.9411764706, alpha: 1)
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.showsVerticalScrollIndicator = false
         collectionView.scrollsToTop = false

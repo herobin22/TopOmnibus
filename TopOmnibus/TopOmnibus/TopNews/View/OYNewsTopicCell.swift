@@ -24,7 +24,7 @@ class OYNewsTopicCell: UICollectionViewCell {
         super.init(frame: frame)
         
         contentView.addSubview(label)
-        label.font = UIFont.systemFont(ofSize: 15)
+        label.font = UIFont.systemFont(ofSize: 16)
         label.snp.makeConstraints { (make) in
             make.centerX.centerY.equalTo(contentView)
         }

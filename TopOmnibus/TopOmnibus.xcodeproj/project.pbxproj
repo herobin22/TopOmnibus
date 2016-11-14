@@ -8,17 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		6A13A8F11DD01E6100986C4F /* OYNewsTopicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A13A8F01DD01E6100986C4F /* OYNewsTopicModel.swift */; };
-		6A2D20931DD9546200A53654 /* UIApplication+WTK.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D207E1DD9546200A53654 /* UIApplication+WTK.m */; };
-		6A2D20941DD9546200A53654 /* UIViewController+WTKAnimationTransitioningSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D20801DD9546200A53654 /* UIViewController+WTKAnimationTransitioningSnapshot.m */; };
-		6A2D20951DD9546200A53654 /* WTKAnimationDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D20821DD9546200A53654 /* WTKAnimationDefault.m */; };
-		6A2D20961DD9546200A53654 /* WTKAnimationDiffNavi.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D20841DD9546200A53654 /* WTKAnimationDiffNavi.m */; };
-		6A2D20971DD9546200A53654 /* WTKAnimationDouYu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D20861DD9546200A53654 /* WTKAnimationDouYu.m */; };
-		6A2D20981DD9546200A53654 /* WTKAnimationKuGou.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D20881DD9546200A53654 /* WTKAnimationKuGou.m */; };
-		6A2D20991DD9546200A53654 /* WTKAnimationOval.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D208A1DD9546200A53654 /* WTKAnimationOval.m */; };
-		6A2D209A1DD9546200A53654 /* WTKAnimationRound.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D208C1DD9546200A53654 /* WTKAnimationRound.m */; };
-		6A2D209B1DD9546200A53654 /* WTKBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D208E1DD9546200A53654 /* WTKBaseAnimation.m */; };
-		6A2D209C1DD9546200A53654 /* WTKTouchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D20901DD9546200A53654 /* WTKTouchManager.m */; };
-		6A2D209D1DD9546200A53654 /* WTKTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D20921DD9546200A53654 /* WTKTransition.m */; };
+		6A2D20B51DD960F700A53654 /* UIApplication+WTK.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D20A01DD960F700A53654 /* UIApplication+WTK.m */; };
+		6A2D20B61DD960F700A53654 /* UIViewController+WTKAnimationTransitioningSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D20A21DD960F700A53654 /* UIViewController+WTKAnimationTransitioningSnapshot.m */; };
+		6A2D20B71DD960F700A53654 /* WTKAnimationDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D20A41DD960F700A53654 /* WTKAnimationDefault.m */; };
+		6A2D20B81DD960F700A53654 /* WTKAnimationDiffNavi.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D20A61DD960F700A53654 /* WTKAnimationDiffNavi.m */; };
+		6A2D20B91DD960F700A53654 /* WTKAnimationDouYu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D20A81DD960F700A53654 /* WTKAnimationDouYu.m */; };
+		6A2D20BA1DD960F700A53654 /* WTKAnimationKuGou.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D20AA1DD960F700A53654 /* WTKAnimationKuGou.m */; };
+		6A2D20BB1DD960F700A53654 /* WTKAnimationOval.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D20AC1DD960F700A53654 /* WTKAnimationOval.m */; };
+		6A2D20BC1DD960F700A53654 /* WTKAnimationRound.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D20AE1DD960F700A53654 /* WTKAnimationRound.m */; };
+		6A2D20BD1DD960F700A53654 /* WTKBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D20B01DD960F700A53654 /* WTKBaseAnimation.m */; };
+		6A2D20BE1DD960F700A53654 /* WTKTouchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D20B21DD960F700A53654 /* WTKTouchManager.m */; };
+		6A2D20BF1DD960F700A53654 /* WTKTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D20B41DD960F700A53654 /* WTKTransition.m */; };
+		6A2D20C11DD9681900A53654 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D20C01DD9681900A53654 /* NSDate+Extension.swift */; };
 		6A41C87A1DD5A5BF00EB6727 /* OYViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A41C8791DD5A5BF00EB6727 /* OYViewController.swift */; };
 		6A41C87C1DD5B90200EB6727 /* OYWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A41C87B1DD5B90200EB6727 /* OYWebViewController.swift */; };
 		6A89D49D1DD1C0EC007BE2AD /* OYNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A89D49C1DD1C0EC007BE2AD /* OYNavigationController.swift */; };
@@ -46,28 +47,29 @@
 		1FA1AFAD3386AFFB7438A8FB /* Pods-TopOmnibus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopOmnibus.release.xcconfig"; path = "Pods/Target Support Files/Pods-TopOmnibus/Pods-TopOmnibus.release.xcconfig"; sourceTree = "<group>"; };
 		2C6250AA3ADF86BA061823FA /* Pods-TopOmnibus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopOmnibus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TopOmnibus/Pods-TopOmnibus.debug.xcconfig"; sourceTree = "<group>"; };
 		6A13A8F01DD01E6100986C4F /* OYNewsTopicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYNewsTopicModel.swift; sourceTree = "<group>"; };
-		6A2D207D1DD9546200A53654 /* UIApplication+WTK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+WTK.h"; sourceTree = "<group>"; };
-		6A2D207E1DD9546200A53654 /* UIApplication+WTK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+WTK.m"; sourceTree = "<group>"; };
-		6A2D207F1DD9546200A53654 /* UIViewController+WTKAnimationTransitioningSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WTKAnimationTransitioningSnapshot.h"; sourceTree = "<group>"; };
-		6A2D20801DD9546200A53654 /* UIViewController+WTKAnimationTransitioningSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WTKAnimationTransitioningSnapshot.m"; sourceTree = "<group>"; };
-		6A2D20811DD9546200A53654 /* WTKAnimationDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTKAnimationDefault.h; sourceTree = "<group>"; };
-		6A2D20821DD9546200A53654 /* WTKAnimationDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTKAnimationDefault.m; sourceTree = "<group>"; };
-		6A2D20831DD9546200A53654 /* WTKAnimationDiffNavi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTKAnimationDiffNavi.h; sourceTree = "<group>"; };
-		6A2D20841DD9546200A53654 /* WTKAnimationDiffNavi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTKAnimationDiffNavi.m; sourceTree = "<group>"; };
-		6A2D20851DD9546200A53654 /* WTKAnimationDouYu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTKAnimationDouYu.h; sourceTree = "<group>"; };
-		6A2D20861DD9546200A53654 /* WTKAnimationDouYu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTKAnimationDouYu.m; sourceTree = "<group>"; };
-		6A2D20871DD9546200A53654 /* WTKAnimationKuGou.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTKAnimationKuGou.h; sourceTree = "<group>"; };
-		6A2D20881DD9546200A53654 /* WTKAnimationKuGou.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTKAnimationKuGou.m; sourceTree = "<group>"; };
-		6A2D20891DD9546200A53654 /* WTKAnimationOval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTKAnimationOval.h; sourceTree = "<group>"; };
-		6A2D208A1DD9546200A53654 /* WTKAnimationOval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTKAnimationOval.m; sourceTree = "<group>"; };
-		6A2D208B1DD9546200A53654 /* WTKAnimationRound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTKAnimationRound.h; sourceTree = "<group>"; };
-		6A2D208C1DD9546200A53654 /* WTKAnimationRound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTKAnimationRound.m; sourceTree = "<group>"; };
-		6A2D208D1DD9546200A53654 /* WTKBaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTKBaseAnimation.h; sourceTree = "<group>"; };
-		6A2D208E1DD9546200A53654 /* WTKBaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTKBaseAnimation.m; sourceTree = "<group>"; };
-		6A2D208F1DD9546200A53654 /* WTKTouchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTKTouchManager.h; sourceTree = "<group>"; };
-		6A2D20901DD9546200A53654 /* WTKTouchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTKTouchManager.m; sourceTree = "<group>"; };
-		6A2D20911DD9546200A53654 /* WTKTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTKTransition.h; sourceTree = "<group>"; };
-		6A2D20921DD9546200A53654 /* WTKTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTKTransition.m; sourceTree = "<group>"; };
+		6A2D209F1DD960F700A53654 /* UIApplication+WTK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+WTK.h"; sourceTree = "<group>"; };
+		6A2D20A01DD960F700A53654 /* UIApplication+WTK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+WTK.m"; sourceTree = "<group>"; };
+		6A2D20A11DD960F700A53654 /* UIViewController+WTKAnimationTransitioningSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WTKAnimationTransitioningSnapshot.h"; sourceTree = "<group>"; };
+		6A2D20A21DD960F700A53654 /* UIViewController+WTKAnimationTransitioningSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WTKAnimationTransitioningSnapshot.m"; sourceTree = "<group>"; };
+		6A2D20A31DD960F700A53654 /* WTKAnimationDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTKAnimationDefault.h; sourceTree = "<group>"; };
+		6A2D20A41DD960F700A53654 /* WTKAnimationDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTKAnimationDefault.m; sourceTree = "<group>"; };
+		6A2D20A51DD960F700A53654 /* WTKAnimationDiffNavi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTKAnimationDiffNavi.h; sourceTree = "<group>"; };
+		6A2D20A61DD960F700A53654 /* WTKAnimationDiffNavi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTKAnimationDiffNavi.m; sourceTree = "<group>"; };
+		6A2D20A71DD960F700A53654 /* WTKAnimationDouYu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTKAnimationDouYu.h; sourceTree = "<group>"; };
+		6A2D20A81DD960F700A53654 /* WTKAnimationDouYu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTKAnimationDouYu.m; sourceTree = "<group>"; };
+		6A2D20A91DD960F700A53654 /* WTKAnimationKuGou.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTKAnimationKuGou.h; sourceTree = "<group>"; };
+		6A2D20AA1DD960F700A53654 /* WTKAnimationKuGou.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTKAnimationKuGou.m; sourceTree = "<group>"; };
+		6A2D20AB1DD960F700A53654 /* WTKAnimationOval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTKAnimationOval.h; sourceTree = "<group>"; };
+		6A2D20AC1DD960F700A53654 /* WTKAnimationOval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTKAnimationOval.m; sourceTree = "<group>"; };
+		6A2D20AD1DD960F700A53654 /* WTKAnimationRound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTKAnimationRound.h; sourceTree = "<group>"; };
+		6A2D20AE1DD960F700A53654 /* WTKAnimationRound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTKAnimationRound.m; sourceTree = "<group>"; };
+		6A2D20AF1DD960F700A53654 /* WTKBaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTKBaseAnimation.h; sourceTree = "<group>"; };
+		6A2D20B01DD960F700A53654 /* WTKBaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTKBaseAnimation.m; sourceTree = "<group>"; };
+		6A2D20B11DD960F700A53654 /* WTKTouchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTKTouchManager.h; sourceTree = "<group>"; };
+		6A2D20B21DD960F700A53654 /* WTKTouchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTKTouchManager.m; sourceTree = "<group>"; };
+		6A2D20B31DD960F700A53654 /* WTKTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTKTransition.h; sourceTree = "<group>"; };
+		6A2D20B41DD960F700A53654 /* WTKTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTKTransition.m; sourceTree = "<group>"; };
+		6A2D20C01DD9681900A53654 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
 		6A41C8791DD5A5BF00EB6727 /* OYViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYViewController.swift; sourceTree = "<group>"; };
 		6A41C87B1DD5B90200EB6727 /* OYWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYWebViewController.swift; sourceTree = "<group>"; };
 		6A89D49C1DD1C0EC007BE2AD /* OYNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYNavigationController.swift; sourceTree = "<group>"; };
@@ -116,31 +118,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6A2D207C1DD9546200A53654 /* WTKTransitionAnimate */ = {
+		6A2D209E1DD960F700A53654 /* WTKTransitionAnimate */ = {
 			isa = PBXGroup;
 			children = (
-				6A2D207D1DD9546200A53654 /* UIApplication+WTK.h */,
-				6A2D207E1DD9546200A53654 /* UIApplication+WTK.m */,
-				6A2D207F1DD9546200A53654 /* UIViewController+WTKAnimationTransitioningSnapshot.h */,
-				6A2D20801DD9546200A53654 /* UIViewController+WTKAnimationTransitioningSnapshot.m */,
-				6A2D20811DD9546200A53654 /* WTKAnimationDefault.h */,
-				6A2D20821DD9546200A53654 /* WTKAnimationDefault.m */,
-				6A2D20831DD9546200A53654 /* WTKAnimationDiffNavi.h */,
-				6A2D20841DD9546200A53654 /* WTKAnimationDiffNavi.m */,
-				6A2D20851DD9546200A53654 /* WTKAnimationDouYu.h */,
-				6A2D20861DD9546200A53654 /* WTKAnimationDouYu.m */,
-				6A2D20871DD9546200A53654 /* WTKAnimationKuGou.h */,
-				6A2D20881DD9546200A53654 /* WTKAnimationKuGou.m */,
-				6A2D20891DD9546200A53654 /* WTKAnimationOval.h */,
-				6A2D208A1DD9546200A53654 /* WTKAnimationOval.m */,
-				6A2D208B1DD9546200A53654 /* WTKAnimationRound.h */,
-				6A2D208C1DD9546200A53654 /* WTKAnimationRound.m */,
-				6A2D208D1DD9546200A53654 /* WTKBaseAnimation.h */,
-				6A2D208E1DD9546200A53654 /* WTKBaseAnimation.m */,
-				6A2D208F1DD9546200A53654 /* WTKTouchManager.h */,
-				6A2D20901DD9546200A53654 /* WTKTouchManager.m */,
-				6A2D20911DD9546200A53654 /* WTKTransition.h */,
-				6A2D20921DD9546200A53654 /* WTKTransition.m */,
+				6A2D209F1DD960F700A53654 /* UIApplication+WTK.h */,
+				6A2D20A01DD960F700A53654 /* UIApplication+WTK.m */,
+				6A2D20A11DD960F700A53654 /* UIViewController+WTKAnimationTransitioningSnapshot.h */,
+				6A2D20A21DD960F700A53654 /* UIViewController+WTKAnimationTransitioningSnapshot.m */,
+				6A2D20A31DD960F700A53654 /* WTKAnimationDefault.h */,
+				6A2D20A41DD960F700A53654 /* WTKAnimationDefault.m */,
+				6A2D20A51DD960F700A53654 /* WTKAnimationDiffNavi.h */,
+				6A2D20A61DD960F700A53654 /* WTKAnimationDiffNavi.m */,
+				6A2D20A71DD960F700A53654 /* WTKAnimationDouYu.h */,
+				6A2D20A81DD960F700A53654 /* WTKAnimationDouYu.m */,
+				6A2D20A91DD960F700A53654 /* WTKAnimationKuGou.h */,
+				6A2D20AA1DD960F700A53654 /* WTKAnimationKuGou.m */,
+				6A2D20AB1DD960F700A53654 /* WTKAnimationOval.h */,
+				6A2D20AC1DD960F700A53654 /* WTKAnimationOval.m */,
+				6A2D20AD1DD960F700A53654 /* WTKAnimationRound.h */,
+				6A2D20AE1DD960F700A53654 /* WTKAnimationRound.m */,
+				6A2D20AF1DD960F700A53654 /* WTKBaseAnimation.h */,
+				6A2D20B01DD960F700A53654 /* WTKBaseAnimation.m */,
+				6A2D20B11DD960F700A53654 /* WTKTouchManager.h */,
+				6A2D20B21DD960F700A53654 /* WTKTouchManager.m */,
+				6A2D20B31DD960F700A53654 /* WTKTransition.h */,
+				6A2D20B41DD960F700A53654 /* WTKTransition.m */,
 			);
 			path = WTKTransitionAnimate;
 			sourceTree = "<group>";
@@ -188,7 +190,8 @@
 			children = (
 				6AF2B0C71DC993D100A8B5A3 /* TopOmnibus-Bridging-Header.h */,
 				6AF2B0DA1DC9D37100A8B5A3 /* OYCommons.swift */,
-				6A2D207C1DD9546200A53654 /* WTKTransitionAnimate */,
+				6A2D20C01DD9681900A53654 /* NSDate+Extension.swift */,
+				6A2D209E1DD960F700A53654 /* WTKTransitionAnimate */,
 				6AF2B0C01DC98B2400A8B5A3 /* Net */,
 			);
 			path = Tool;
@@ -418,33 +421,34 @@
 			files = (
 				6AAD1ADA1DCC3ECB007015FD /* OYNewsListCell.swift in Sources */,
 				6AE406921DCB20E00010ABB5 /* OYNewsVC.swift in Sources */,
-				6A2D209D1DD9546200A53654 /* WTKTransition.m in Sources */,
+				6A2D20BF1DD960F700A53654 /* WTKTransition.m in Sources */,
 				6AAD1AD61DCC2C23007015FD /* OYNewsChannelVC.swift in Sources */,
 				6AF2B0D51DC9C3BD00A8B5A3 /* OYWeChatVC.swift in Sources */,
 				6AF2B0C91DC993D700A8B5A3 /* OYHTTPSessionManager.swift in Sources */,
 				6A41C87C1DD5B90200EB6727 /* OYWebViewController.swift in Sources */,
-				6A2D209B1DD9546200A53654 /* WTKBaseAnimation.m in Sources */,
-				6A2D209A1DD9546200A53654 /* WTKAnimationRound.m in Sources */,
+				6A2D20BD1DD960F700A53654 /* WTKBaseAnimation.m in Sources */,
+				6A2D20BC1DD960F700A53654 /* WTKAnimationRound.m in Sources */,
 				6A41C87A1DD5A5BF00EB6727 /* OYViewController.swift in Sources */,
 				6AE406961DCB2BCE0010ABB5 /* OYNewsTopicView.swift in Sources */,
 				6A13A8F11DD01E6100986C4F /* OYNewsTopicModel.swift in Sources */,
-				6A2D20951DD9546200A53654 /* WTKAnimationDefault.m in Sources */,
-				6A2D209C1DD9546200A53654 /* WTKTouchManager.m in Sources */,
+				6A2D20B71DD960F700A53654 /* WTKAnimationDefault.m in Sources */,
+				6A2D20BE1DD960F700A53654 /* WTKTouchManager.m in Sources */,
 				6AFCAC211DC748B600857560 /* ViewController.swift in Sources */,
-				6A2D20941DD9546200A53654 /* UIViewController+WTKAnimationTransitioningSnapshot.m in Sources */,
+				6A2D20B61DD960F700A53654 /* UIViewController+WTKAnimationTransitioningSnapshot.m in Sources */,
 				6AE406981DCB2C1C0010ABB5 /* OYNewsTopicCell.swift in Sources */,
-				6A2D20971DD9546200A53654 /* WTKAnimationDouYu.m in Sources */,
+				6A2D20B91DD960F700A53654 /* WTKAnimationDouYu.m in Sources */,
 				6AF2B0CB1DC9973900A8B5A3 /* OYAPIManager.swift in Sources */,
-				6A2D20981DD9546200A53654 /* WTKAnimationKuGou.m in Sources */,
+				6A2D20BA1DD960F700A53654 /* WTKAnimationKuGou.m in Sources */,
 				6AE406901DCB1FA80010ABB5 /* OYNewsModel.swift in Sources */,
 				6AFCAC1F1DC748B600857560 /* AppDelegate.swift in Sources */,
 				6AF2B0D31DC9A3D300A8B5A3 /* OYWeChatModel.swift in Sources */,
 				6A89D49D1DD1C0EC007BE2AD /* OYNavigationController.swift in Sources */,
-				6A2D20961DD9546200A53654 /* WTKAnimationDiffNavi.m in Sources */,
+				6A2D20C11DD9681900A53654 /* NSDate+Extension.swift in Sources */,
+				6A2D20B81DD960F700A53654 /* WTKAnimationDiffNavi.m in Sources */,
 				6AF2B0DB1DC9D37100A8B5A3 /* OYCommons.swift in Sources */,
 				6AF2B0D81DC9C4F000A8B5A3 /* OYWeChatCell.swift in Sources */,
-				6A2D20991DD9546200A53654 /* WTKAnimationOval.m in Sources */,
-				6A2D20931DD9546200A53654 /* UIApplication+WTK.m in Sources */,
+				6A2D20BB1DD960F700A53654 /* WTKAnimationOval.m in Sources */,
+				6A2D20B51DD960F700A53654 /* UIApplication+WTK.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

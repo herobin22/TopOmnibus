@@ -18,7 +18,7 @@ class OYNewsListCell: UITableViewCell {
             let newModel = model!
             titleLabel.text = newModel.title
             authorLabel.text = newModel.author_name
-            dateLabel.text = newModel.date
+            dateLabel.text = NSDate.dateString(dateString: newModel.date!, dateFormat: "yyyy-MM-dd HH:mm")
             titleLabel.sizeToFit()
             authorLabel.sizeToFit()
             dateLabel.sizeToFit()

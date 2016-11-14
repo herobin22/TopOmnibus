@@ -32,7 +32,7 @@ class OYNewsVC: UIViewController {
     func setupUI() -> Void {
         automaticallyAdjustsScrollViewInsets = false
         view.backgroundColor = UIColor.white
-        topicView.frame = CGRect(x: 0, y: 64, width: mainWidth, height: 36)
+        topicView.frame = CGRect(x: 0, y: 64, width: mainWidth, height: 40)
         weak var weakSelf = self
         topicView.didSelectTopic = {
             (num) in
@@ -42,10 +42,11 @@ class OYNewsVC: UIViewController {
         topicView.process = 0
         view.addSubview(topicView)
         
-        collectionView.frame = CGRect(x: 0, y: 100, width: mainWidth, height: view.bounds.size.height-100-49)
+        collectionView.frame = CGRect(x: 0, y: 104, width: mainWidth, height: view.bounds.size.height-104-49)
         collectionView.backgroundColor = UIColor.white
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.alwaysBounceHorizontal = true
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.showsVerticalScrollIndicator = false
         collectionView.isPagingEnabled = true
