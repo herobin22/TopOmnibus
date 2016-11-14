@@ -9,9 +9,8 @@ pod 'SnapKit' , '~> 3.0.2'
 pod 'AFNetworking'
 pod 'SDWebImage'
 pod 'MJRefresh'
-pod 'YYModel'
 pod 'AXWebViewController'
-
+pod 'Google-Mobile-Ads-SDK'
 
 end
 

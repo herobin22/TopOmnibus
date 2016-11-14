@@ -33,12 +33,13 @@ class OYViewController: UIViewController, GADBannerViewDelegate {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.tableFooterView = UIView()
         
-        bannerView.frame = CGRect(x: 16, y: 0, width: mainWidth-32, height: 60)
-        bannerView.delegate = self
-        bannerView.adUnitID = AdMobAdUnitID
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
-        tableView.tableHeaderView = bannerView
+        /// 不在列表显示广告了
+//        bannerView.frame = CGRect(x: 16, y: 0, width: mainWidth-32, height: 60)
+//        bannerView.delegate = self
+//        bannerView.adUnitID = AdMobAdUnitID
+//        bannerView.rootViewController = self
+//        bannerView.load(GADRequest())
+//        tableView.tableHeaderView = bannerView
     }
     
     private func setupRefresh() {

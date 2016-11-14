@@ -17,6 +17,9 @@ class OYNavigationController: UINavigationController {
         navigationBar.barTintColor = mainRedColor
         navigationBar.tintColor = UIColor.white
         navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+        
+        self.delegate = WTKTransition.shareManager()
+        WTKTransition.shareManager().animationType = .douYu;
     }
 
     override func didReceiveMemoryWarning() {

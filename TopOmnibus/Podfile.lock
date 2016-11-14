@@ -20,6 +20,7 @@ PODS:
     - Aspects
     - AXNavigationBackItemInjection
     - NJKWebViewProgress
+  - Google-Mobile-Ads-SDK (7.14.0)
   - MJRefresh (3.1.10)
   - NJKWebViewProgress (0.2.3):
     - NJKWebViewProgress/Core (= 0.2.3)
@@ -30,27 +31,26 @@ PODS:
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
   - SnapKit (3.0.2)
-  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking
   - AXWebViewController
+  - Google-Mobile-Ads-SDK
   - MJRefresh
   - SDWebImage
   - SnapKit (~> 3.0.2)
-  - YYModel
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   AXNavigationBackItemInjection: 0ab0742fafd9ec37e44b8767c96cbbc77ec13575
   AXWebViewController: d6d9920c2a0cf4456f3641b2a78da11a8ad80c06
+  Google-Mobile-Ads-SDK: dbb0211c52ca02f72331b831ce4ccd218cf08748
   MJRefresh: bb72948c985914b0b5cecac573a2c69a8915fb02
   NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
-  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: b5603adc7ad948bdece1425ffd0f0d3f14cae633
+PODFILE CHECKSUM: 6047418e2f53f8787a1d13f0952d68fc4dc938b8
 
 COCOAPODS: 1.1.1

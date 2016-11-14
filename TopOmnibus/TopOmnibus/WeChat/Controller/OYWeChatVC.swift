@@ -51,7 +51,6 @@ class OYWeChatVC: OYViewController {
 
 }
 
-
 extension OYWeChatVC {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.dataSource.count
@@ -67,7 +66,7 @@ extension OYWeChatVC {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let model = dataSource[indexPath.row]
-        let webVC = AXWebViewController(address: model.url!)
+        let webVC = OYWebViewController(address: model.url!)
         webVC.navigationType = .barItem
         self.navigationController?.pushViewController(webVC, animated: true)
     }
