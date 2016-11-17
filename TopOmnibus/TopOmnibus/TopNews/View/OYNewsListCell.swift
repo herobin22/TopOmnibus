@@ -28,24 +28,25 @@ class OYNewsListCell: UITableViewCell {
                 make.width.equalTo(width)
                 make.height.equalTo(width*0.75)
             }
+            let placeImage = UIImage(named: "colorBg")!
             switch newModel.picArr.count {
             case 1:
                 picView2.isHidden = true
                 picView3.isHidden = true
-                picView1.sd_setImage(with: URL(string: newModel.picArr[0]))
+                picView1.sd_setImage(with: URL(string: newModel.picArr[0]), placeholderImage: placeImage)
                 break
             case 2:
                 picView2.isHidden = false
                 picView3.isHidden = true
-                picView1.sd_setImage(with: URL(string: newModel.picArr[0]))
-                picView2.sd_setImage(with: URL(string: newModel.picArr[1]))
+                picView1.sd_setImage(with: URL(string: newModel.picArr[0]), placeholderImage: placeImage)
+                picView2.sd_setImage(with: URL(string: newModel.picArr[1]), placeholderImage: placeImage)
                 break
             case 3:
                 picView2.isHidden = false
                 picView3.isHidden = false
-                picView1.sd_setImage(with: URL(string: newModel.picArr[0]))
-                picView2.sd_setImage(with: URL(string: newModel.picArr[1]))
-                picView3.sd_setImage(with: URL(string: newModel.picArr[2]))
+                picView1.sd_setImage(with: URL(string: newModel.picArr[0]), placeholderImage: placeImage)
+                picView2.sd_setImage(with: URL(string: newModel.picArr[1]), placeholderImage: placeImage)
+                picView3.sd_setImage(with: URL(string: newModel.picArr[2]), placeholderImage: placeImage)
                 break
             default:
                 break

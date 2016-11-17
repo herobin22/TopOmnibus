@@ -21,6 +21,7 @@ class OYViewController: UIViewController, GADBannerViewDelegate {
 
         setupUI()
         setupRefresh()
+        setupTitleView()
     }
 
     private func setupUI() {
@@ -32,20 +33,21 @@ class OYViewController: UIViewController, GADBannerViewDelegate {
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.tableFooterView = UIView()
-        
-        /// 不在列表显示广告了
-//        bannerView.frame = CGRect(x: 16, y: 0, width: mainWidth-32, height: 60)
-//        bannerView.delegate = self
-//        bannerView.adUnitID = AdMobAdUnitID
-//        bannerView.rootViewController = self
-//        bannerView.load(GADRequest())
-//        tableView.tableHeaderView = bannerView
+        tableView.scrollsToTop = true
     }
     
     private func setupRefresh() {
         tableView.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(headRefresh))
-        headRefresh()
+        tableView.mj_header.beginRefreshing()
         tableView.mj_footer = MJRefreshAutoNormalFooter(refreshingTarget: self, refreshingAction: #selector(footRefresh))
+        tableView.mj_footer.isHidden = true
+    }
+    
+    private func setupTitleView() {
+        let imageView = UIImageView(image: UIImage(named: "titleBus"))
+        imageView.contentMode = .scaleAspectFit
+        imageView.bounds = CGRect(x: 0, y: 0, width: 150, height: 44)
+        navigationItem.titleView = imageView
     }
     
     @objc private func headRefresh() {

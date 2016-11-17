@@ -27,9 +27,10 @@ class OYNewsVC: UIViewController {
         super.viewDidLoad()
         
         setupUI()
+        setupTitleView()
     }
 
-    func setupUI() -> Void {
+    private func setupUI() -> Void {
         automaticallyAdjustsScrollViewInsets = false
         view.backgroundColor = UIColor.white
         topicView.frame = CGRect(x: 0, y: 64, width: mainWidth, height: 40)
@@ -58,6 +59,13 @@ class OYNewsVC: UIViewController {
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "OYChannelCell")
         view.addSubview(collectionView)
     }
+    
+    private func setupTitleView() {
+        let imageView = UIImageView(image: UIImage(named: "titleBus"))
+        imageView.contentMode = .scaleAspectFit
+        imageView.bounds = CGRect(x: 0, y: 0, width: 150, height: 44)
+        navigationItem.titleView = imageView
+    }
 }
 
 extension OYNewsVC: UICollectionViewDataSource, UICollectionViewDelegate {
@@ -78,6 +86,7 @@ extension OYNewsVC: UICollectionViewDataSource, UICollectionViewDelegate {
 
         return cell
     }
+
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offsetX = scrollView.contentOffset.x
         guard offsetX >= 0 && offsetX <= scrollView.contentSize.width-mainWidth else {

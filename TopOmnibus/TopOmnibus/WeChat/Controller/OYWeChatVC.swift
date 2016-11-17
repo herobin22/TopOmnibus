@@ -43,9 +43,10 @@ class OYWeChatVC: OYViewController {
             }
             self.dataSource.append(contentsOf: models)
             self.tableView.reloadData()
+            self.tableView.mj_footer.isHidden = false
             self.endRefresh()
         }) { (_, error) in
-            print(error)
+            self.endRefresh()
         }
     }
 

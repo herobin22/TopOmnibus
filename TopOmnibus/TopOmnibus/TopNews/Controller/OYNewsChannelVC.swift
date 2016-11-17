@@ -11,23 +11,13 @@ import AXWebViewController
 
 class OYNewsChannelVC: OYViewController {
 
+    /// 类型
     var type: String?
+    /// 数据源
     var dataSource: [OYNewsModel] = [OYNewsModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(OYNewsListCell.self, forCellReuseIdentifier: OYNewsListCellID)
-    }
-    
-    private func setupUI() {
-        view.backgroundColor = UIColor.white
-        tableView.frame = view.bounds
-        view.addSubview(tableView)
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.estimatedRowHeight = 100
-        tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.tableFooterView = UIView()
         tableView.register(OYNewsListCell.self, forCellReuseIdentifier: OYNewsListCellID)
     }
     
@@ -38,16 +28,22 @@ class OYNewsChannelVC: OYViewController {
         OYAPIManager.sharedManager.loadNewsData(type: param, success: { (models) in
             self.dataSource = models
             self.tableView.reloadData()
+            self.tableView.mj_footer.isHidden = false
             self.endRefresh()
             self.tableView.mj_footer.endRefreshingWithNoMoreData()
         }) { (_, error) in
-            print(error)
+            self.endRefresh()
         }
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         tableView.frame = view.bounds
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
     }
 }
 
