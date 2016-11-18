@@ -120,11 +120,14 @@ extension NSDate {
         }
     }
     
-    class func dateString(dateString: String, dateFormat: String) ->String {
+    class func dateString(dateString: String?, dateFormat: String) ->String? {
+        guard let string = dateString else {
+            return nil
+        }
         let formatter = DateFormatter()
         formatter.dateFormat = dateFormat
         formatter.locale = NSLocale(localeIdentifier: "zh-cn") as Locale!
-        let date = formatter.date(from: dateString)! as NSDate
+        let date = formatter.date(from: string)! as NSDate
         return date.dateString()
     }
 }

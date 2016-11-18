@@ -81,10 +81,18 @@ extension OYNewsVC: UICollectionViewDataSource, UICollectionViewDelegate {
             view.removeFromSuperview()
         }
         let vc = channelVc(withTopic: topicArr[indexPath.item])
+        vc.tableView.scrollsToTop = true
         cell.contentView.addSubview(vc.view)
         vc.view.frame = cell.bounds
 
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        // 通过topic找出控制器
+        let vc = channelVc(withTopic: topicArr[indexPath.row])
+        // 将点击状态栏滚动至顶的功能关闭
+        vc.tableView.scrollsToTop = false
     }
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
