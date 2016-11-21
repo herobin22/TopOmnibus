@@ -11,6 +11,16 @@
 		6A2D20C11DD9681900A53654 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D20C01DD9681900A53654 /* NSDate+Extension.swift */; };
 		6A41C87A1DD5A5BF00EB6727 /* OYViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A41C8791DD5A5BF00EB6727 /* OYViewController.swift */; };
 		6A41C87C1DD5B90200EB6727 /* OYWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A41C87B1DD5B90200EB6727 /* OYWebViewController.swift */; };
+		6A76C9051DE2DF0A00E205F2 /* BaiduMobAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A76C9041DE2DF0A00E205F2 /* BaiduMobAdSDK.framework */; };
+		6A76C9071DE2DF7C00E205F2 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A76C9061DE2DF7C00E205F2 /* AdSupport.framework */; };
+		6A76C9091DE2DF8300E205F2 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A76C9081DE2DF8300E205F2 /* StoreKit.framework */; };
+		6A76C90B1DE2E01F00E205F2 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A76C90A1DE2E01F00E205F2 /* libc++.tbd */; };
+		6A76C90D1DE2E02600E205F2 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A76C90C1DE2E02600E205F2 /* CoreMotion.framework */; };
+		6A76C90F1DE2E02E00E205F2 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A76C90E1DE2E02E00E205F2 /* MessageUI.framework */; };
+		6A76C9111DE2E03600E205F2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A76C9101DE2E03600E205F2 /* CoreLocation.framework */; };
+		6A76C9131DE2E03E00E205F2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A76C9121DE2E03E00E205F2 /* CoreTelephony.framework */; };
+		6A76C9151DE2E04600E205F2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A76C9141DE2E04600E205F2 /* SystemConfiguration.framework */; };
+		6A76C9171DE2EC4800E205F2 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A76C9161DE2EC4800E205F2 /* UIImage+Extension.swift */; };
 		6A89D49D1DD1C0EC007BE2AD /* OYNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A89D49C1DD1C0EC007BE2AD /* OYNavigationController.swift */; };
 		6AAD1AD61DCC2C23007015FD /* OYNewsChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAD1AD51DCC2C23007015FD /* OYNewsChannelVC.swift */; };
 		6AAD1ADA1DCC3ECB007015FD /* OYNewsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAD1AD91DCC3ECB007015FD /* OYNewsListCell.swift */; };
@@ -39,6 +49,16 @@
 		6A2D20C01DD9681900A53654 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
 		6A41C8791DD5A5BF00EB6727 /* OYViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYViewController.swift; sourceTree = "<group>"; };
 		6A41C87B1DD5B90200EB6727 /* OYWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYWebViewController.swift; sourceTree = "<group>"; };
+		6A76C9041DE2DF0A00E205F2 /* BaiduMobAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMobAdSDK.framework; sourceTree = "<group>"; };
+		6A76C9061DE2DF7C00E205F2 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		6A76C9081DE2DF8300E205F2 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		6A76C90A1DE2E01F00E205F2 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		6A76C90C1DE2E02600E205F2 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		6A76C90E1DE2E02E00E205F2 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		6A76C9101DE2E03600E205F2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6A76C9121DE2E03E00E205F2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		6A76C9141DE2E04600E205F2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6A76C9161DE2EC4800E205F2 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		6A89D49C1DD1C0EC007BE2AD /* OYNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYNavigationController.swift; sourceTree = "<group>"; };
 		6AAD1AD51DCC2C23007015FD /* OYNewsChannelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYNewsChannelVC.swift; sourceTree = "<group>"; };
 		6AAD1AD91DCC3ECB007015FD /* OYNewsListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYNewsListCell.swift; sourceTree = "<group>"; };
@@ -70,7 +90,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A76C9151DE2E04600E205F2 /* SystemConfiguration.framework in Frameworks */,
+				6A76C9131DE2E03E00E205F2 /* CoreTelephony.framework in Frameworks */,
+				6A76C9111DE2E03600E205F2 /* CoreLocation.framework in Frameworks */,
+				6A76C90F1DE2E02E00E205F2 /* MessageUI.framework in Frameworks */,
+				6A76C90D1DE2E02600E205F2 /* CoreMotion.framework in Frameworks */,
+				6A76C90B1DE2E01F00E205F2 /* libc++.tbd in Frameworks */,
+				6A76C9091DE2DF8300E205F2 /* StoreKit.framework in Frameworks */,
+				6A76C9071DE2DF7C00E205F2 /* AdSupport.framework in Frameworks */,
 				C0B64CE7FE9CEC3A7C4C9AEB /* Pods_TopOmnibus.framework in Frameworks */,
+				6A76C9051DE2DF0A00E205F2 /* BaiduMobAdSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +109,15 @@
 		01EEAFD438A04C16D9B2DB7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6A76C9141DE2E04600E205F2 /* SystemConfiguration.framework */,
+				6A76C9121DE2E03E00E205F2 /* CoreTelephony.framework */,
+				6A76C9101DE2E03600E205F2 /* CoreLocation.framework */,
+				6A76C90E1DE2E02E00E205F2 /* MessageUI.framework */,
+				6A76C90C1DE2E02600E205F2 /* CoreMotion.framework */,
+				6A76C90A1DE2E01F00E205F2 /* libc++.tbd */,
+				6A76C9081DE2DF8300E205F2 /* StoreKit.framework */,
+				6A76C9061DE2DF7C00E205F2 /* AdSupport.framework */,
+				6A76C9041DE2DF0A00E205F2 /* BaiduMobAdSDK.framework */,
 				C9205560FF243AED3FA09C52 /* Pods_TopOmnibus.framework */,
 			);
 			name = Frameworks;
@@ -129,6 +167,7 @@
 				6AF2B0C71DC993D100A8B5A3 /* TopOmnibus-Bridging-Header.h */,
 				6AF2B0DA1DC9D37100A8B5A3 /* OYCommons.swift */,
 				6A2D20C01DD9681900A53654 /* NSDate+Extension.swift */,
+				6A76C9161DE2EC4800E205F2 /* UIImage+Extension.swift */,
 				6AF2B0C01DC98B2400A8B5A3 /* Net */,
 			);
 			path = Tool;
@@ -363,6 +402,7 @@
 				6AF2B0C91DC993D700A8B5A3 /* OYHTTPSessionManager.swift in Sources */,
 				6A41C87C1DD5B90200EB6727 /* OYWebViewController.swift in Sources */,
 				6A41C87A1DD5A5BF00EB6727 /* OYViewController.swift in Sources */,
+				6A76C9171DE2EC4800E205F2 /* UIImage+Extension.swift in Sources */,
 				6AE406961DCB2BCE0010ABB5 /* OYNewsTopicView.swift in Sources */,
 				6A13A8F11DD01E6100986C4F /* OYNewsTopicModel.swift in Sources */,
 				6AFCAC211DC748B600857560 /* ViewController.swift in Sources */,
@@ -510,6 +550,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = W34ZLPQLA6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TopOmnibus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -531,15 +575,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = W34ZLPQLA6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TopOmnibus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.herob.NewsBus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4f0544e4-f465-4919-89c8-daa7b9c647fc";
-				PROVISIONING_PROFILE_SPECIFIER = NewsBus_appstore;
+				PROVISIONING_PROFILE = "d6ae16bb-9e80-407d-9f89-c3bb9a8f066b";
+				PROVISIONING_PROFILE_SPECIFIER = NewsBus_development;
 				SWIFT_OBJC_BRIDGING_HEADER = "TopOmnibus/Tool/TopOmnibus-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;

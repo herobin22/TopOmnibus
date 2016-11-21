@@ -32,6 +32,6 @@ class OYWebViewController: AXWebViewController, GADBannerViewDelegate, UIScrollV
         var frame = bannerView.frame
         frame.origin.y = -scrollView.contentOffset.y-60
         bannerView.frame = frame
-        
     }
 }
+

@@ -9,10 +9,13 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, BaiduMobAdSplashDelegate {
 
     var window: UIWindow?
 
+    var splash = BaiduMobAdSplash()
+    
+    var customSplashView = UIImageView()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -20,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow.init(frame: UIScreen.main.bounds)
         setRootVC()
         window?.makeKeyAndVisible()
+        
+        setupBaiduAd()
         
         return true
     }
@@ -34,6 +39,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabBarVC.viewControllers = [firstNav, secondNav]
         
         window?.rootViewController = tabBarVC
+    }
+    
+    func setupBaiduAd() -> Void {
+        splash.delegate = self
+        splash.adUnitTag = "3098497"
+        splash.canSplashClick = true
+        splash.loadAndDisplay(usingKeyWindow: window)
+        
+        /// 自定义开屏的view
+        customSplashView.frame = window!.frame
+        let width = Int(mainWidth)
+        let height = Int(mainHeight)
+        customSplashView.image = UIImage.getLauchImage()
+        window!.addSubview(customSplashView)
+        
+        let baiduSplashContainer = UIView(frame: CGRect(x: 0, y: 0, width: mainWidth, height: mainHeight-80))
+        customSplashView.addSubview(baiduSplashContainer)
+        
+        splash.loadAndDisplay(usingContainerView: baiduSplashContainer)
+    }
+    
+    func publisherId() -> String! {
+        return "e271117e"
+    }
+    
+    func splashSuccessPresentScreen(_ splash: BaiduMobAdSplash!) {
+        print("splashSuccessPresentScreen")
+    }
+    
+    func splashlFailPresentScreen(_ splash: BaiduMobAdSplash!, withError reason: BaiduMobFailReason) {
+        print(reason)
+        customSplashView.removeFromSuperview()
+    }
+    
+    func splashDidDismissScreen(_ splash: BaiduMobAdSplash!) {
+        print("splashSuccessPresentScreen")
+        customSplashView.removeFromSuperview()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
