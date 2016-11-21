@@ -34,11 +34,4 @@ class OYWebViewController: AXWebViewController, GADBannerViewDelegate, UIScrollV
         bannerView.frame = frame
         
     }
-//    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-//        if scrollView.contentOffset.y > -64 {
-//            scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
-//        }else {
-//            scrollView.contentInset = UIEdgeInsetsMake(60, 0, 0, 0)
-//        }
-//    }
 }
