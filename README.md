@@ -9,4 +9,6 @@
    [从头开始写一款开源app上线,相互学习(一)](http://www.jianshu.com/p/ce07d29ee7f0)
     
    [从头开始写一款开源app上线,相互学习(二)](http://www.jianshu.com/p/4e5f5a67c6b3)
+   
+   [从头开始写一款开源app上线,相互学习(三)](http://www.jianshu.com/p/70ae22bc956f)
 
