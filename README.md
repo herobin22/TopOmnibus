@@ -12,3 +12,4 @@
    
    [从头开始写一款开源app上线,相互学习(三)](http://www.jianshu.com/p/70ae22bc956f)
 
+    AppStore下载:[新闻巴士](https://itunes.apple.com/cn/app/xin-wen-ba-shi-sou-luo-ni/id1177888999?mt=8)
