@@ -548,7 +548,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = W34ZLPQLA6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -559,8 +559,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.herob.NewsBus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d6ae16bb-9e80-407d-9f89-c3bb9a8f066b";
-				PROVISIONING_PROFILE_SPECIFIER = NewsBus_development;
+				PROVISIONING_PROFILE = "4f0544e4-f465-4919-89c8-daa7b9c647fc";
+				PROVISIONING_PROFILE_SPECIFIER = NewsBus_appstore;
 				SWIFT_OBJC_BRIDGING_HEADER = "TopOmnibus/Tool/TopOmnibus-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -575,7 +575,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = W34ZLPQLA6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -586,8 +586,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.herob.NewsBus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d6ae16bb-9e80-407d-9f89-c3bb9a8f066b";
-				PROVISIONING_PROFILE_SPECIFIER = NewsBus_development;
+				PROVISIONING_PROFILE = "4f0544e4-f465-4919-89c8-daa7b9c647fc";
+				PROVISIONING_PROFILE_SPECIFIER = NewsBus_appstore;
 				SWIFT_OBJC_BRIDGING_HEADER = "TopOmnibus/Tool/TopOmnibus-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
