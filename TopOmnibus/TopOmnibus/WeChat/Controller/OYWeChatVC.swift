@@ -71,4 +71,14 @@ extension OYWeChatVC {
         webVC.navigationType = .barItem
         self.navigationController?.pushViewController(webVC, animated: true)
     }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
+    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+        return .portrait
+    }
 }

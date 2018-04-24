@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 import SDWebImage
-
+import WebKit
 let OYWeChatCellID = NSStringFromClass(OYWeChatVC.self)
 
 class OYWeChatCell: UITableViewCell {

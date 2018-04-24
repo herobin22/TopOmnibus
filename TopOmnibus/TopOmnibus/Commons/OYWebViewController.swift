@@ -33,5 +33,15 @@ class OYWebViewController: AXWebViewController, GADBannerViewDelegate, UIScrollV
         frame.origin.y = -scrollView.contentOffset.y-60
         bannerView.frame = frame
     }
+    
+    override var shouldAutorotate: Bool {
+        return true
+    }
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .all
+    }
+    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+        return .portrait
+    }
 }
 

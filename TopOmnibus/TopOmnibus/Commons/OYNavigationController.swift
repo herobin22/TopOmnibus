@@ -34,4 +34,14 @@ class OYNavigationController: UINavigationController {
         }
         super.pushViewController(viewController, animated: animated)
     }
+    
+    override var shouldAutorotate: Bool {
+        return true
+    }
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return self.viewControllers.last!.supportedInterfaceOrientations
+    }
+    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+        return self.viewControllers.last!.preferredInterfaceOrientationForPresentation
+    }
 }

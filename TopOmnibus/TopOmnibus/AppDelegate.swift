@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, BaiduMobAdSplashDelegate 
     }
     
     func setRootVC() -> Void {
-        let tabBarVC = UITabBarController()
+        let tabBarVC = OYTabBarController()
         tabBarVC.tabBar.tintColor = mainRedColor
         let firstNav = OYNavigationController(rootViewController: OYNewsVC())
         firstNav.tabBarItem = UITabBarItem(title: "新闻", image: UIImage(named: "tabbar_icon_news_normal"), selectedImage: UIImage(named: "tabbar_icon_news_highlight"))
